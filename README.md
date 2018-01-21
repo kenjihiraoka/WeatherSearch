@@ -3,7 +3,7 @@ Checkout this repo, install dependencies, then start the gulp process with the f
 
 ```
 > git clone https://github.com/kenjihiraoka/WeatherSearch.git
-> cd ReduxSimpleStarter_Weather
+> cd WeatherSearch
 > npm install
 > npm start
 ```
