@@ -9,8 +9,8 @@ export const FETCH_WEATHER = 'FETCH_WEATHER';
 
 
 //________________ACTIONS CREATORS______________________
-export function fetchWeather(city) {
-	const url = `${ROOT_URL}&q=${city}, us`;
+export function fetchWeather(city, country) {
+	const url = `${ROOT_URL}&q=${city},${country}`;
 	const request = axios.get(url);								//make a request with payload and return a promise
 
 	//console.log('Request:', request);
@@ -19,4 +19,4 @@ export function fetchWeather(city) {
 		type: FETCH_WEATHER,
 		payload: request  										//payload is a promise returned from request
 	}
-}
+}	
